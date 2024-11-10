@@ -1,0 +1,160 @@
+/* Variáveis */
+:root {
+    --cor-principal: #62CC69; /* Cor principal */
+    --cor-clara: #CCF0CE; /* Cor com tonalidade clara */
+    --fonte-principal: 'IBM Plex Sans', sans-serif;
+}
+
+/* Estilo Global */
+* {
+    font-family: var(--fonte-principal);
+    font-weight: 500;
+    font-style: normal;
+    font-size: 1.2rem;
+}
+
+/* Navbar */
+.navbar {
+    background-color: var(--cor-principal); /* Cor principal da navbar */
+    border: none; /* Remove a borda padrão */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra para profundidade */
+    border-radius: 8px; /* Adiciona bordas arredondadas */
+}
+
+.navbar i {
+    margin-right: 0.8rem;
+}
+
+.navbar a {
+    color: white;
+    font-weight: bold;
+}
+
+.navbar a:hover {
+    color: gray;
+    font-weight: bold;
+    transition: 0.8s;
+}
+
+/* Botões */
+.btn:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    font-weight: bolder;
+}
+
+/* Containers */
+.container {
+    border-radius: 8px;
+}
+
+.container-coruja {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3rem;
+}
+
+/* Tabelas */
+.container th {
+    font-weight: bold;
+}
+
+.table {
+    font-size: 1.3rem;
+}
+
+/* Texto */
+.texto-indicadores {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 0;
+}
+
+/* Fundo */
+.fundo-verde {
+    background-color: var(--cor-principal);
+    font-weight: bold;
+}
+
+.fundo-verde-claro {
+    background-color: var(--cor-clara);
+    font-weight: bold;
+}
+
+.fundo-azul-claro {
+    background-color: rgb(167, 189, 236);
+    font-weight: bold;
+}
+
+.fundo-azul {
+    background-color: rgb(0, 82, 255);
+    font-weight: bold;
+}
+
+/* Ícone e Balão de Fala */
+.icon {
+    width: 80px;
+    height: 80px;
+    margin-right: 1rem;
+}
+
+.speech-bubble {
+    background-color: #f9f9f9;
+    padding-top: 10px;
+    padding-left: 8px;
+    padding-right: 8px;
+    border-radius: 10px;
+    position: relative;
+    margin-left: -3.5%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    height:fit-content;
+}
+
+/* icones */
+i {
+    margin-right: 0.5 rem;
+}
+.icone_coruja {
+    width: 152px;
+    height: 152px;
+}
+
+/* cards */
+.card {
+    border-radius: 30px;
+}
+html, body {
+    height: 100%; /* Garante que o HTML e o body ocupem a altura total da janela */
+    margin: 0; /* Remove margens padrão */
+    display: flex;
+    flex-direction: column;
+}
+
+.main-content {
+    flex: 1; /* Faz o conteúdo principal ocupar o espaço restante */
+}
+
+.footer-fixo {
+    background-color: var(--cor-principal); /* Usa a cor principal definida */
+    color: white;
+    text-align: center;
+    padding: 20px 0; /* Espaçamento vertical */
+    width: 100%; /* Largura total do footer */
+}
+
+.fomxp {
+    zoom: 0.8;
+}
+
+/* ajustes para telas pequenas */
+@media (max-width: 763px)
+{
+* {
+    font-size: 1.0rem;
+}
+.container {
+    width: 80%;
+};
+}
+
