@@ -80,8 +80,6 @@ public class CriarContaServlet extends HttpServlet {
             session.setAttribute("user", usuarioCriado);
             session.setAttribute("usuarioLogado", email);
             session.setAttribute("idConta", contaCriada.getIdConta());
-
-            // Redireciona para o dashboard
             response.sendRedirect("dashboard");
 
         } catch (DBException e) {
